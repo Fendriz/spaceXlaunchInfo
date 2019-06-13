@@ -317,7 +317,7 @@ function populateFlight(number){
 		runtimer(flights[0])
 	}
 	else if (number > 0){
-		live.className = " .live";
+		live.className = "live";
 
 	}
 
