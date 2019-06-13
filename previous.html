@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SpaceX Launch Info - Previous Launches</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content= "Torgeir Haugum">
+	<meta name="descriptions" content="Previous SpaceX Launches">
+	<meta name="keywords" content="Previous SpaceX launches, SpaceX missions, SpaceX payloads info, SpaceX Rocket Info, SpaceX inforamtion links, SpaceX launch details">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<header id="header-pages">
+	  <div class="container">
+	    <nav class ="nav-pages">
+			<a class="logo" href="index.html">
+			<img class="svg-SpaceX" id ="svg-spaceX-logo2" src="svg/spacex-vector-logo2.svg" alt="SpaceX Logo">
+			</a>
+			<div class="hamburger">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div class ="links">
+				<a href="upcomming.html">UPCOMMING LAUNCHES</a>
+				<span>|</span>
+				<a id="active" href="previous.html">PREVIOUS LAUNCHES</a>
+				<span>|</span>
+				<a href="map.html">LAUNCH SITES</a>
+				<span>|</span>
+				<a href="contact.html">CONTACT US</a>
+			</div>
+	    </nav>
+	  </div>
+	</header>
+	<main>
+		<div class ="container">
+		  <div class ="flex-container">
+		  	  <div class="page-highlight">
+		  		<h4 class="hide-desktop">PREVIOUS LAUNCHES</h4>
+		  		<button class="hide-css launch-list-button">LAUNCH LIST</button>
+		  	  </div>
+		      <div class="launch-list-wrapper">
+		      <h2>PREVIOUS LAUNCHES</h2>
+		      <p>Sort by:</p>
+		      <label class="radio" for="date-early"><input onclick="sortDate()" id="date-early" type="radio" name="sort">Date [ Early - Late ]</label>
+		      <label class="radio" for="name-a"><input onclick="sortNameRev()" id="name-a" type="radio" name="sort">Name [ a - z ]</label><br>
+		      <label class="radio" for="date-late"><input onclick="sortDateRev()" checked="checked" id="date-late" type="radio" name="sort">Date [ Late - Early ]</label>
+		      <label class="radio" for="name-z"><input onclick="sortName()" id="name-z" type="radio" name="sort">Name [ z - a ]</label>
+		      <div class="launch-list">
+		        <ul></ul>
+		      </div>
+		    </div>
+		    <div class="launch-info-wrapper">
+		        <div class="grid-container">
+		            <div class="item1">
+		               <div class="item1-wrapper">
+		                    <img id="image-flight-icon-left" class="input-image-flight-icon" src="" alt="SpaceX flight icon left">
+			                <div class="flight-number">
+				                <h2 class="input-flight-number"></h2>
+				                <p class="input-flight"></p>
+			                </div>
+		              		<a class="button" id="button-youtube">WATCH</a>
+		                	<img id="image-flight-icon-right" class="input-image-flight-icon" src="" alt="SpaceX flight icon right">
+		            	</div>
+		            	<div class ="youtube"></div>
+		          	</div>
+		          	<div class="hide item2">
+			            <h3>LAUNCH TIME</h3>
+			            <p><span>date</span><span class="input-date"></span></p>
+			            <p><span>Time</span><span class="input-time"></span></p>
+		          	</div>
+		          	<div class="hide item3">
+			            <h3>ROCKET</h3>
+			            <img class ="input-img-rocket hideall" alt="spaceX rocket type">
+			            <p class="input-rocket-serial hideall"></p>
+			            <p class="input-rocket-type hideall"></p>
+			            <div class="rocketaddons hideall">
+			              	<div id="input-rocket-gradfins">
+				                <div class="rocket-booleans" id="input-rocket-gradfins-boolean"></div>
+				                <p>gridfins</p>
+			              	</div>
+			              	<div id="input-rocket-legs">
+				                <div class="rocket-booleans" id="input-rocket-legs-boolean"></div>
+				                <p>legs</p>
+			              	</div>
+			              	<div id="input-rocket-reused">
+				                <div class="rocket-booleans" id="input-rocket-reused-boolean"></div>
+				                <p>reused</p>
+			             	</div>
+			              	<div id="input-rocket-land_success">
+				                <div class="rocket-booleans" id="input-rocket-land_success-boolean"></div>
+				                <p>land_success</p>
+			              	</div>
+			            </div>
+			            <a class="rocke-link hideall">Learn more</a>
+		          	</div>
+		          	<div class="hide item4">
+		            	<h3>LINKS</h3>
+		          	</div>
+		          	<div class="hide item5">
+		            	<h3>LAUNCH SITE</h3>
+		            	<a class="hideall launch-site" href=""></a>
+		          	</div>
+		          	<div class="hide item6">
+			            <h3>PAYLOADS</h3>
+		          	</div>
+		          	<div class="hide item7">
+			            <h3>DETAILS</h3>
+			            <p class="hideall"></p>
+		          	</div>
+		          	<div class="item17">
+		          		<h3>WATCH</h3>
+		          	</div>
+		          	<div class="item8">
+		          		<h1><</h1>
+		          	</div>
+		          	<div class="item9">
+		          		<h1>></h1>
+		          	</div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</main>
+	<footer class="footer-pages">
+		<div class="container">
+			<section class ="sosial-media">
+				<a href="https://twitter.com/spacex" target="_blank"><i class="fab fa-twitter fab-pages"></i></a>
+				<a href="https://www.facebook.com/groups/spacexgroup/" target="_blank"><i class="fab fa-facebook fab-pages"></i></a>
+				<a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank"><i class="fab fa-youtube fab-pages"></i></a>
+				<a href="https://www.instagram.com/spacex/?hl=nb" target="_blank"><i class="fab fa-instagram fab-pages"></i></a>
+				<a href="https://vimeo.com/spacexlaunch" target="_blank"><i class="fab fa-vimeo-v fab-pages"></i></a>
+			</section>
+		</div>
+		<section class="copyright">
+			<p>&copy; Copyright 2018 All rights reserved</p>
+		</section>
+	</footer>
+	<script src="script/previous.js"></script>
+</body>
+</html>

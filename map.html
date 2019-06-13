@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SpaceX Launch Info - Launch Sites</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content= "Torgeir Haugum">
+	<meta name="descriptions" content="SpaceX Launch Sites">
+	<meta name="keywords" content="Map of spaceX launch sites, SpaceX launchmap, SpaceX launch map, SpaceX launch sites">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDs8r6GYDiEfFWP8EakjkMoCqU0-mI7Ho"></script>
+	<script src="http://cdn.sobekrepository.org/includes/gmaps-markerwithlabel/1.9.1/gmaps-markerwithlabel-1.9.1.js" type="text/javascript"></script>
+</head>
+<body>
+	<header id="header-pages">
+	  <div class="container">
+	    <nav class ="nav-pages">
+			<a class="logo" href="index.html">
+			<img class="svg-SpaceX" id ="svg-spaceX-logo2" src="svg/spacex-vector-logo2.svg" alt="SpaceX Logo">
+			</a>
+			<div class="hamburger">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div class ="links">
+				<a href="upcomming.html">UPCOMMING LAUNCHES</a>
+				<span>|</span>
+				<a  href="previous.html">PREVIOUS LAUNCHES</a>
+				<span>|</span>
+				<a id="active" href="map.html">LAUNCH SITES</a>
+				<span>|</span>
+				<a href="contact.html">CONTACT US</a>
+			</div>
+	    </nav>
+	  </div>
+	</header>
+	<main>
+		<div class ="container">
+		  <div class ="flex-container">
+		  	<div class="page-highlight">
+		  		<button id ="launch-list-button-map" class="hide-css launch-list-button">LAUNCH SITES</button>
+		  	</div>
+		    <div id="launch-list-wrapper-map" class="launch-list-wrapper ">
+		      <h2>LAUNCH SITES</h2>
+		      <div class="launch-list" id="map-launch-list">
+		        <ul>
+		        	<li id="launch-list-1">Kwajalein</li>
+		        	<li id="launch-list-2">Cape Canaveral</li>
+		        	<li id="launch-list-4">Kennedy Space Center</li>
+		        	<li id="launch-list-5">Vandenberg Complex 3W</li>
+		        	<li id="launch-list-6">Vandenberg Complex 4E</li>
+		        	<li id="launch-list-8">SpaceX South Texas</li>
+		        </ul>
+		      </div>
+		    </div>
+		    <div class="launch-info-wrapper" id="launch-info-wrapper-map">
+		        <div id ="map-container" class="grid-container">
+		          <div class="item11 countdiv">
+		          		<h2>MAP OF LAUNCH SITES</h2>
+		          </div>
+		          <div class="item10 mapdiv">
+		          	<div id="map"></div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</main>
+	<footer class="footer-pages">
+		<div class="container">
+			<section class ="sosial-media">
+				<a href="https://twitter.com/spacex" target="_blank"><i class="fab fa-twitter fab-pages"></i></a>
+				<a href="https://www.facebook.com/groups/spacexgroup/" target="_blank"><i class="fab fa-facebook fab-pages"></i></a>
+				<a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank"><i class="fab fa-youtube fab-pages"></i></a>
+				<a href="https://www.instagram.com/spacex/?hl=nb" target="_blank"><i class="fab fa-instagram fab-pages"></i></a>
+				<a href="https://vimeo.com/spacexlaunch" target="_blank"><i class="fab fa-vimeo-v fab-pages"></i></a>
+			</section>
+		</div>
+		<section class="copyright">
+			<p>&copy; Copyright 2018 All rights reserved</p>
+		</section>
+	</footer>
+	<script src="script/map.js"></script>
+</body>
+</html>

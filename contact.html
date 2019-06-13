@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SpaceX Launch Info - Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content= "Torgeir Haugum">
+	<meta name="descriptions" content="Contact SpaceX Launch Info">
+	<meta name="keywords" content="SpaceX launch info Contact Us, Contact form spaceX launch info, Contact SpaceX launchinfo,Contact SpaceX launch info">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<header id="header-pages">
+	  <div class="container">
+	    <nav class ="nav-pages">
+			<a class="logo" href="index.html">
+			<img class="svg-SpaceX" id ="svg-spaceX-logo2" src="svg/spacex-vector-logo2.svg" alt="SpaceX Logo">
+			</a>
+			<div class="hamburger">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div class ="links">
+				<a href="upcomming.html">UPCOMMING LAUNCHES</a>
+				<span>|</span>
+				<a  href="previous.html">PREVIOUS LAUNCHES</a>
+				<span>|</span>
+				<a href="map.html">LAUNCH SITES</a>
+				<span>|</span>
+				<a id="active" href="contact.html">CONTACT US</a>
+			</div>
+	    </nav>
+	  </div>
+	</header>
+	<main>
+		<div class ="container">
+			<div class="contact-wrapper">
+				<section id="contact">
+					<h2>CONTACT US</h2>
+					<form id="contact-form">
+						<section>
+							<input type="text" name="name" id="firstName" placeholder="First Name">
+							<span class="error" id="firstNameError">This field cannot be blank</span>
+						</section>
+						<section>
+							<input type="text" name="name" id="lastName" placeholder="Last Name">
+							<span class="error" id="lastNameError">This field cannot be blank</span>
+						</section>
+						<section>
+							<input type="text" name="email" id="email" placeholder="Email">
+							<span class="error" id="emailError">Please enter a correct email address</span>
+						</section>
+						<section>
+							<input type="text" name="phone" id="phone" placeholder="Phone &nbsp;(123-123-1234)">
+							<span class="error" id="phoneError">Please enter a correct phone number</span>
+						</section>
+						<section>
+							<textarea id="contact-texterea" placeholder="Comments/Questions"></textarea>
+							<span class="error" id="textError">This field cannot be blank</span>
+						</section>
+						<section>
+							<button type="button" id="submitContact" class="button">SUBMIT</button>
+						</section>
+					</form>
+					<div id="contact-info">
+						<div>
+							<section id="contact-info-phone">
+								<i class="fas fa-mobile-alt"></i>
+								<h4>+4785749332</h4>
+							</section>
+							<section id="contact-info-mail">
+								<i class="fas fa-envelope"></i>
+								<h4>spaceX@gmail.com</h4>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</main>
+	<footer class="footer-pages">
+		<div class="container">
+			<section class ="sosial-media">
+				<a href="https://twitter.com/spacex" target="_blank"><i class="fab fa-twitter fab-pages"></i></a>
+				<a href="https://www.facebook.com/groups/spacexgroup/" target="_blank"><i class="fab fa-facebook fab-pages"></i></a>
+				<a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank"><i class="fab fa-youtube fab-pages"></i></a>
+				<a href="https://www.instagram.com/spacex/?hl=nb" target="_blank"><i class="fab fa-instagram fab-pages"></i></a>
+				<a href="https://vimeo.com/spacexlaunch" target="_blank"><i class="fab fa-vimeo-v fab-pages"></i></a>
+			</section>
+		</div>
+		<section class="copyright">
+			<p>&copy; Copyright 2019 All rights reserved</p>
+		</section>
+	</footer>
+	<script src="script/contact.js"></script>
+</body>
+</html>

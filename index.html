@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SpaceX Launch Info - Welcome</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content= "Torgeir Haugum">
+	<meta name="descriptions" content="SpaceX Launch Info, SpaceX Launches, Next SpaceX Launch">
+	<meta name="keywords" content="SpaceX launch countdown, spaceX launch info, SpaceX info">
+	<link rel="stylesheet" type="text/css" href="css/frontpage.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+	  <div class="container">
+	    <nav class ="nav-frontpage">
+			<a class="logo" href="index.html">
+			<img class="svg-SpaceX" src="svg/spacex-vector-logo.svg" alt="SpaceX Logo">
+			</a>
+			<div class="hamburger">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div class ="links">
+				<a href="upcomming.html">UPCOMMING LAUNCHES</a>
+				<span>|</span>
+				<a href="previous.html">PREVIOUS LAUNCHES</a>
+				<span>|</span>
+				<a href="map.html">LAUNCH SITES</a>
+				<span>|</span>
+				<a href="contact.html">CONTACT US</a>
+			</div>
+	    </nav>
+	  </div>
+	</header>
+	<main>
+		<div class="container">
+			<section class="count-down">
+				<h3>- NEXT LAUNCH -</h3>
+				<h1 id ="count-down-timer">
+					<span id="count-down-days"></span>:<span id="count-down-hours"></span>:<span id="count-down-minutes"></span>:<span id="count-down-seconds"></span>
+				</h1>
+				<h4><span>Days</span><span>Hours</span><span>Minutes</span><span>Seconds</span></h4>
+				<a class="button" href="upcomming.html">LEARN MORE</a>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<section class ="sosial-media">
+				<a href="https://twitter.com/spacex" target="_blank"><i class="fab fa-twitter fab-pages"></i></a>
+				<a href="https://www.facebook.com/groups/spacexgroup/" target="_blank"><i class="fab fa-facebook fab-pages"></i></a>
+				<a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA" target="_blank"><i class="fab fa-youtube fab-pages"></i></a>
+				<a href="https://www.instagram.com/spacex/?hl=nb" target="_blank"><i class="fab fa-instagram fab-pages"></i></a>
+				<a href="https://vimeo.com/spacexlaunch" target="_blank"><i class="fab fa-vimeo-v fab-pages"></i></a>
+			</section>
+		</div>
+	</footer>
+	<script src="script/timer.js"></script>
+</body>
+</html>
